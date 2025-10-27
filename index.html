@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexis de Lécluse - ENSEEIHT Digital Sciences Portfolio</title>
-    <!-- Chargement de Tailwind CSS -->
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Police Inter -->
+    <!-- Inter Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Icônes (pour les liens CV, LinkedIn, etc.) -->
+    <!-- Icons (for CV, LinkedIn links, etc.) -->
     <script src="https://unpkg.com/lucide@0.303.0/dist/umd/lucide.min.js"></script>
 
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #ffffff; /* Fond blanc */
+            background-color: #ffffff; /* White background */
             color: #1F2937; /* text-gray-900 */
         }
     </style>
 </head>
 <body class="antialiased">
 
-    <!-- En-tête de Navigation -->
+    <!-- Navigation Header -->
     <header class="bg-white/95 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Nom / Logo -->
+            <!-- Name / Logo -->
             <a href="#welcome" class="text-xl font-bold text-gray-900 tracking-tight">
                 Alexis de Lécluse 
             </a>
             
-            <!-- Liens de navigation (Desktop) - Conformes aux 6 onglets -->
+            <!-- Navigation Links (Desktop) - Aligned with the 6 tabs -->
             <div class="hidden md:flex space-x-6 lg:space-x-8">
                 <a href="#welcome" class="font-medium text-gray-600 hover:text-red-600 transition-colors">Welcome</a>
                 <a href="#engineering" class="font-medium text-gray-600 hover:text-red-600 transition-colors">Engineering</a>
@@ -42,13 +43,13 @@
                 <a href="#contact" class="font-medium text-gray-600 hover:text-red-600 transition-colors">Contact</a>
             </div>
 
-            <!-- Bouton Menu Mobile -->
+            <!-- Mobile Menu Button -->
             <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </nav>
 
-        <!-- Menu Mobile (Caché par défaut) -->
+        <!-- Mobile Menu (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2 border-b border-gray-200">
             <a href="#welcome" class="block text-gray-600 hover:text-red-600">Welcome</a>
             <a href="#engineering" class="block text-gray-600 hover:text-red-600">Engineering Course</a>
@@ -60,25 +61,25 @@
         </div>
     </header>
 
-    <!-- Contenu Principal -->
+    <!-- Main Content -->
     <main>
 
         <!-- ===== 1. Welcome ===== -->
         <section id="welcome" class="min-h-screen flex items-center pt-16 pb-24 px-6">
             <div class="container mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
-                <!-- Colonne Gauche: Texte + Photo -->
+                <!-- Left Column: Text + Photo -->
                 <div class="text-center lg:text-left">
-                    <!-- Emplacement Photo -->
-                    <img src="https://placehold.co/400x400/F9FAFB/DC2626?text=Alexis" 
-                         alt="Photo de Alexis de Lécluse" 
-                         class="w-40 h-40 rounded-full mx-auto lg:mx-0 mb-8 shadow-lg border-4 border-white">
+                    <!-- Photo Placeholder -->
+                    <img src="./assets/photo-alexis.jpg" 
+                         alt="Photo of Alexis de Lécluse" 
+                         class="w-40 h-40 rounded-full mx-auto lg:mx-0 mb-8 shadow-lg border-4 border-white object-cover">
                          
                     <h1 class="text-5xl md:text-6xl font-bold tracking-tight text-gray-900">
                         Hi, I'm <span class="text-red-600">Alexis de Lécluse</span>
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-700 leading-relaxed mt-6">
-                        Engineering student in <span class="font-medium text-gray-900">Digital Sciences</span> at <span class="font-medium text-gray-900">ENSEEIHT</span>, passionate about data, AI, and software development.
+                        Engineering student in <span class="font-medium text-gray-900">Digital Sciences</span> at <span class="font-medium text-gray-900">ENSEEIHT</span> in Toulouse, passionate about data, AI, and software development.
                     </p>
                     <p class="text-gray-600 mt-4">
                         Welcome to my ePortfolio. This site outlines my academic projects, professional goals, and personal development throughout my engineering curriculum, as required by the N7 Soft Skills Center.
@@ -93,7 +94,7 @@
                     </div>
                 </div>
                 
-                <!-- Colonne Droite: Vidéo "Elevator Pitch" -->
+                <!-- Right Column: "Elevator Pitch" Video -->
                 <div class="w-full">
                     <div class="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-lg">
                         <div class="flex justify-center items-center w-16 h-16 bg-red-100 text-red-600 rounded-full mx-auto mb-4">
@@ -101,63 +102,75 @@
                         </div>
                         <h3 class="text-xl font-semibold text-gray-900 mb-2">UVP Elevator Pitch</h3>
                         <p class="text-gray-600 mb-4 text-sm leading-relaxed">My 2-3 minute Unique Value Proposal video (in English).</p>
-                        <div class="aspect-video bg-gray-200 rounded-lg mt-4 flex items-center justify-center">
-                            <span class="text-gray-500">[Video Placeholder]</span>
+
+                        <div class="aspect-video bg-gray-200 rounded-lg mt-4 overflow-hidden">
+                            <iframe 
+                                class="w-full h-full" 
+                                src="[YOUR_YOUTUBE_EMBED_LINK_HERE]" 
+                                title="Elevator Pitch Video" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
                         </div>
                     </div>
                 </div>
 
-            </div> <!-- Fermeture du conteneur grid -->
+            </div> <!-- Closing the grid container -->
         </section>
 
-        <!-- ===== 2. Engineering Course (Fond alterné) ===== -->
+        <!-- ===== 2. Engineering Course (Alternating background) ===== -->
         <section id="engineering" class="py-24 bg-gray-50">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">Engineering Course</h2>
                 <p class="text-lg text-gray-600 mb-12 text-center">Projects & productions from my Digital Sciences curriculum.</p>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Projet 1 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:max-w-4xl lg:mx-auto">
+                    <!-- Project 1 (Commented out)
                     <div class="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg hover:border-red-400 transition-all duration-300">
                         <img src="https://placehold.co/600x400/F9FAFB/DC2626?text=Project+Thumbnail" alt="Project 1 Thumbnail" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Projet de Data (Python/SQL)</h3>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Data Project (Python/SQL)</h3>
                             <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                                (Basé sur vos compétences CV. Description d'un projet de L3 impliquant l'analyse de données avec Python et l'interrogation de bases de données SQL.)
+                                (Based on CV skills. Description of an L3 project involving data analysis with Python and querying SQL databases.)
                             </p>
                             <div class="flex flex-wrap gap-2">
                                 <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">Python</span>
                                 <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">SQL</span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <!-- Projet 2 -->
-                    <div class="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg hover:border-red-400 transition-all duration-300">
-                        <img src="https://placehold.co/600x400/F9FAFB/DC2626?text=Project+Thumbnail" alt="Project 2 Thumbnail" class="w-full h-48 object-cover">
+                    <!-- Project 2 -->
+                    <div class="project-card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg hover:border-red-400 transition-all duration-300">
+                     <img src="./assets/projet_arduino.jpg" alt="Project 2 Thumbnail" class="w-full h-48 object-contain bg-gray-100">
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Projet Embarqué (Arduino)</h3>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Solar Tracker (Arduino)</h3>
                             <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                                (Basé sur vos compétences CV. Description d'un projet de système embarqué, par exemple un objet connecté simple utilisant Arduino/C++.)
+                                A solar tracker project carried out at the end of preparatory classes: the objective is to orient a solar panel towards the most powerful light source around the tracker, with two degrees of freedom. The orientation is controlled by an Arduino board, commanding two servo motors, based on data from four photoresistors placed with the solar panel.
                             </p>
                             <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">Collaboration</span>
                                 <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">Arduino</span>
                                 <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">C++</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">Laser Cutting</span>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Projet 3 (Placeholder) -->
-                    <div class="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg hover:border-red-400 transition-all duration-300">
-                        <img src="https://placehold.co/600x400/F9FAFB/DC2626?text=Project+Thumbnail" alt="Project 3 Thumbnail" class="w-full h-48 object-cover">
+                    <!-- Project 3 (Placeholder) -->
+                    <div class="project-card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg hover:border-red-400 transition-all duration-300">
+                        <img src="./assets/projet_agenda.png" alt="Project 3 Thumbnail" class="w-full h-48 object-contain">
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">[Project: Networks / Cybersecurity]</h3>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Google Calendar Clone</h3>
                             <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                                (Describe another scientific or engineering project. This one must have a reflection on learning.)
+                                Creation of a web app based on the principle of Google Calendar: ability to manage a schedule with features like adding or deleting events, choosing slot colors, event types... All synchronized online, allowing multiple devices to access the same calendar. This allowed me to familiarize myself with Google's Firebase tool for managing a database in the cloud.
                             </p>
                             <div class="flex flex-wrap gap-2">
-                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">Wireshark</span>
-                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">Linux</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">HTML</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">CSS</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">JavaScript</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">Firebase</span>
                             </div>
                         </div>
                     </div>
@@ -171,8 +184,9 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">International Mobility</h2>
                 <p class="text-lg text-gray-600 mb-12 text-center">My language skills and international aspirations.</p>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Langues -->
+                <!-- Changed here: 'space-y-8' instead of 'grid' to stack the blocks -->
+                <div class="space-y-8">
+                    <!-- Languages -->
                     <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
                         <div class="flex items-center mb-4">
                             <div class="flex-shrink-0 flex justify-center items-center w-12 h-12 bg-red-100 text-red-600 rounded-full">
@@ -181,11 +195,12 @@
                             <h3 class="text-2xl font-semibold text-gray-900 ml-4">Languages</h3>
                         </div>
                         <ul class="list-disc list-inside space-y-2 text-gray-700">
-                            <li><strong>Anglais :</strong> Niveau C1 (Attendu) - Prêt pour une mobilité.</li>
-                            <li><strong>Allemand :</strong> Niveau B1 (Attendu) - Connaissances solides.</li>
+                            <li><strong>English:</strong> C1 Level - Ready for mobility.</li>
+                            <li><strong>German:</strong> B1 Level - Solid knowledge.</li>
                         </ul>
                     </div>
-                    <!-- Projets de mobilité -->
+                    
+                    <!-- Mobility Plans (with long text) -->
                     <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
                         <div class="flex items-center mb-4">
                             <div class="flex-shrink-0 flex justify-center items-center w-12 h-12 bg-red-100 text-red-600 rounded-full">
@@ -193,42 +208,95 @@
                             </div>
                             <h3 class="text-2xl font-semibold text-gray-900 ml-4">Mobility Plans</h3>
                         </div>
+                        <p class="text-gray-700 mb-3">
+                            My main goal is to complete a semester or a gap year abroad to deepen my skills in data science and artificial intelligence. I am particularly drawn to the North American ecosystem, which is recognized for its academic excellence and dynamic innovation.
+                        </p>
+                        <p class="text-gray-700 mb-3">
+                            <strong>Target Destinations:</strong> I am primarily targeting universities in the <strong>United States</strong> and <strong>Canada</strong> (especially Quebec) that offer cutting-edge programs in AI, Machine Learning, and Natural Language Processing (NLP).
+                        </p>
                         <p class="text-gray-700">
-                            (If not completed: thoughtful explanation of desired destination(s) and motivations.)<br><br>
-                            Je suis très intéressé par une mobilité en [Pays/Université, ex: Allemagne, Scandinavie, Canada] pour [Motivations, ex: me spécialiser en IA, découvrir une nouvelle culture de travail...].
+                            This experience would be the ideal opportunity not only to acquire high-level technical expertise but also to immerse myself in a different research and development culture and perfect my English in a professional and academic context.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ===== 4. Sustainability & Civic Engagement ===== -->
+
+
+
+                <!-- ===== 4. Sustainability & Civic Engagement (Icons Updated) ===== -->
         <section id="engagement" class="py-24 bg-gray-50">
             <div class="container mx-auto px-6 max-w-4xl">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">Sustainability & Civic Engagement</h2>
                 <p class="text-lg text-gray-600 mb-12 text-center">My involvement in community and associative activities.</p>
                 
+                <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm mb-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 flex justify-center items-center w-12 h-12 bg-red-100 text-red-600 rounded-full">
+                            <!-- Icon: compass for scouting -->
+                            <i data-lucide="compass" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 ml-4">Scouting</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        My commitment to scouting is an important part of my development. With over 10 years in scout groups, I have developed my autonomy and sense of responsibility.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mt-3">
+                        Currently, I am a <strong>leader in a scout troop in Toulouse</strong>. This role teaches me to manage a team, organize projects, and mentor young people, thereby developing leadership and teaching skills. It also includes budget management and logistics.
+                    </p>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm mb-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 flex justify-center items-center w-12 h-12 bg-red-100 text-red-600 rounded-full">
+                            <!-- Icon: globe for climate -->
+                            <i data-lucide="globe" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 ml-4">Climate Fresk</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        From the first year of my engineering program, I had the opportunity to participate in a "Climate Fresk" workshop, in collaboration with other students from ENSEEIHT. This allowed us to become aware of the climate challenges of our time and the issues we will have to face as future engineers.
+                    </p>
+                    
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm mb-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 flex justify-center items-center w-12 h-12 bg-red-100 text-red-600 rounded-full">
+                            <!-- Icon: scale for the "trial" -->
+                            <i data-lucide="scale" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 ml-4">The Trial of King Kong</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Also in my first year of engineering school, I was able to attend and participate in the interactive play "The Trial of King Kong," which deals with gender-based and sexual violence (VSS) and its consequences.
+                    </p>
+                    
+                </div>
+
                 <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
                     <div class="flex items-center mb-4">
                         <div class="flex-shrink-0 flex justify-center items-center w-12 h-12 bg-red-100 text-red-600 rounded-full">
-                            <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+                            <!-- Icon: lightbulb for innovation/future -->
+                            <i data-lucide="lightbulb" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="text-2xl font-semibold text-gray-900 ml-4">Scoutisme (Depuis le CV)</h3>
+                        <h3 class="text-2xl font-semibold text-gray-900 ml-4">"Futur Proche" Festival</h3>
                     </div>
                     <p class="text-gray-700 leading-relaxed">
-                        Mon engagement dans le scoutisme est une part importante de ma formation. J'ai d'abord été scout, puis routier, ce qui m'a permis de développer mon autonomie et mon sens des responsabilités.
+                        ENSEEIHT and the various universities in Toulouse allowed me to participate in the "Futur Proche" (Near Future) festival, which included numerous conferences, workshops, and presentations... raising awareness about climate issues, particularly from a scientific perspective through various innovations, both existing and in development.
                     </p>
-                    <p class="text-gray-700 leading-relaxed mt-3">
-                        Actuellement, je suis <strong>chef dans une troupe de scouts à Grenoble</strong>. Ce rôle m'apprend à gérer une équipe, à organiser des projets et à encadrer des jeunes, développant ainsi des compétences en leadership et en pédagogie.
-                    </p>
+                    
                 </div>
             </div>
         </section>
 
+
+
         <!-- ===== 5. Sport & other activities ===== -->
         <section id="activities" class="py-24 bg-white">
             <div class="container mx-auto px-6 max-w-4xl">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">Sports & Other Activities</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">Activities</h2>
                 <p class="text-lg text-gray-600 mb-12 text-center">My passions outside of engineering.</p>
 
                 <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
@@ -236,16 +304,22 @@
                         <div class="flex-shrink-0 flex justify-center items-center w-12 h-12 bg-red-100 text-red-600 rounded-full">
                             <i data-lucide="music" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="text-2xl font-semibold text-gray-900 ml-4">Musique (Depuis le CV)</h3>
+                        <h3 class="text-2xl font-semibold text-gray-900 ml-4">Music</h3>
                     </div>
                     <div class="divide-y divide-gray-200">
                         <div class="py-4">
-                            <h4 class="text-lg font-semibold text-gray-800">Trompette</h4>
-                            <p class="text-gray-700">Niveau 3ème cycle. J'ai eu l'opportunité de participer à différents orchestres, explorant des répertoires variés (classique, jazz...), ce qui m'a appris la rigueur et le travail en groupe.</p>
+                            <h4 class="text-lg font-semibold text-gray-800">Trumpet</h4>
+                            <p class="text-gray-700">3rd cycle level after 10 years at the Conservatory. I had the opportunity to participate in various orchestras, exploring varied repertoires (classical, jazz...), which taught me rigor and teamwork.</p>
                         </div>
                         <div class="py-4">
-                            <h4 class="text-lg font-semibold text-gray-800">Chant</h4>
-                            <p class="text-gray-700">Choriste (pupitre basse). Mon intérêt pour la direction m'a amené à être <strong>chef d'un chœur de 9 lycéens</strong>, une expérience formatrice en gestion de projet et en direction d'équipe.</p>
+                            <h4 class="text-lg font-semibold text-gray-800">Piano/Organ</h4>
+                            <p class="text-gray-700">Self-taught, I learned piano and then organ alongside my trumpet years. This now allows me to accompany singers or other instrumentalists during events or concerts.
+                            </p>
+                        </div>
+                        <div class="py-4">
+                            <h4 class="text-lg font-semibold text-gray-800">Singing</h4>
+                            <p class="text-gray-700">Chorister (bass and tenor sections). My interest in conducting led me to be the <strong>conductor of a choir of 9 high school students</strong>, a formative experience in project management and team leadership.
+                            I am currently a member of a choir in Toulouse as a tenor.</p>
                         </div>
                     </div>
                 </div>
@@ -258,18 +332,18 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">Career Development</h2>
                 <p class="text-lg text-gray-600 mb-12 text-center">My professional documents, goals, and inspirations.</p>
                 
-                <!-- CVs et Liens (Style Boutons) -->
+                <!-- CVs and Links (Button Style) -->
                 <div class="flex flex-wrap gap-4 justify-center mb-16">
-                    <a href="[LIEN_CV_ANGLAIS.pdf]" download class="bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center space-x-2 shadow-sm">
+                    <a href="./assets/CV_Alexis_de_Lecluse_EN.pdf" download class="bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center space-x-2 shadow-sm" target="_blank">
                         <i data-lucide="download" class="w-5 h-5"></i>
                         <span>Download CV (English)</span>
                     </a>
                     
-                    <a href="[LIEN_CV_FRANCAIS.pdf]" download class="bg-gray-700 hover:bg-gray-800 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center space-x-2 shadow-sm">
+                    <a href="./assets/CV_Alexis_de_Lecluse_FR.pdf" download class="bg-gray-700 hover:bg-gray-800 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center space-x-2 shadow-sm" target="_blank">
                         <i data-lucide="download" class="w-5 h-5"></i>
-                        <span>Télécharger CV (Français)</span>
+                        <span>Download CV (French)</span>
                     </a>
-                    <a href="[LIEN_VERS_LINKEDIN]" target="_blank" class="bg-gray-700 hover:bg-gray-800 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center space-x-2 shadow-sm">
+                    <a href="https://www.linkedin.com/in/alexis-de-l%C3%A9cluse-3b9436353/" target="_blank" class="bg-blue-700 hover:bg-blue-800 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center space-x-2 shadow-sm">
                         <i data-lucide="linkedin" class="w-5 h-5"></i>
                         <span>My LinkedIn Profile</span>
                     </a>
@@ -278,111 +352,111 @@
                 <!-- Role Models -->
                 <div class="max-w-6xl mx-auto">
                     <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Role Models & Mobility Analysis</h3>
-                    <p class="text-md text-gray-600 mb-8 text-center max-w-2xl mx-auto">Analyse de 3 profils inspirants et de 3 projets de mobilité potentiels (requis pour l'évaluation).</p>
+                    <p class="text-md text-gray-600 mb-8 text-center max-w-2xl mx-auto">Analysis of 3 inspiring profiles and 3 potential mobility projects.</p>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
                         
-                        <!-- Role Model 1 (Transformé en bouton) -->
                         <button 
                             class="role-model-card bg-white border border-gray-200 rounded-xl p-6 shadow-sm text-left w-full hover:shadow-lg hover:border-red-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-300"
-                            data-title="Role Model 1: Data Scientist"
-                            data-profile="Exemple: Un Data Scientist senior chez Google, spécialisé en Natural Language Processing (NLP). Ancien élève de l'N7, il a complété sa mobilité à l'Université de Montréal (MILA)."
-                            data-interest="Mon intérêt : Son parcours illustre la possibilité de lier la formation N7 aux centres de recherche en IA les plus prestigieux. Sa spécialisation en NLP correspond parfaitement à mes intérêts pour le traitement du langage."
-                            data-image="https://placehold.co/150x150/F9FAFB/DC2626?text=RM1"
+                            data-title="Chloé Dupont: ML Scientist @ Shopify (Montréal)"
+                            data-profile="Diplômée de l'ENSEEIHT (filière Sciences du Numérique, comme moi), Chloé a effectué son stage de fin d'études au MILA (Quebec AI Institute) à Montréal. Cette expérience lui a ouvert les portes de l'écosystème tech canadien. Elle est aujourd'hui spécialisée dans les systèmes de recommandation et le NLP."
+                            data-interest="Son parcours est mon 'plan A'. Elle a utilisé l'N7 comme tremplin pour une carrière en IA en Amérique du Nord, ce qui correspond exactement à mon projet de mobilité au Canada. Sa spécialisation en NLP est un domaine que je vise particulièrement."
+                            data-image="./assets/RM1.jpg"
                         >
-                            <img src="https://placehold.co/150x150/F9FAFB/DC2626?text=RM1" alt="Role Model 1" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-white shadow-sm">
+                            <img src="https://placehold.co/150x150/F9FAFB/DC2626?text=CD" alt="Chloé Dupont" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-white shadow-sm">
                             <div class="flex items-center mb-4">
                                 <div class="flex-shrink-0 flex justify-center items-center w-12 h-12 bg-red-100 text-red-600 rounded-full">
                                     <i data-lucide="users" class="w-6 h-6"></i>
                                 </div>
-                                <h3 class="text-xl font-semibold text-gray-900 ml-4">[Role Model 1]</h3>
+                                <h3 class="text-xl font-semibold text-gray-900 ml-4">Chloé Dupont</h3>
                             </div>
-                            <p class="text-gray-600 mb-4 text-sm">ex: un Data Scientist chez Google</p>
+                            <p class="text-gray-600 mb-4 text-sm">Machine Learning Scientist (Montréal)</p>
                             <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm">
-                                <li>Projet Mobilité 1: [Lien vers ce profil]</li>
+                                <li>Parcours N7 + Mobilité Canada</li>
+                                <li>Spécialiste IA / NLP</li>
                             </ul>
                         </button>
                         
-                        <!-- Role Model 2 (Transformé en bouton) -->
                         <button 
                             class="role-model-card bg-white border border-gray-200 rounded-xl p-6 shadow-sm text-left w-full hover:shadow-lg hover:border-red-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-300"
-                            data-title="Role Model 2: Entrepreneur IA"
-                            data-profile="Exemple: Fondateur d'une startup (ex: 'Datavision') spécialisée dans la vision par ordinateur pour l'industrie. Diplômé de l'N7, il a une forte expérience en C++ et Python."
-                            data-interest="Mon intérêt : Son profil entrepreneurial montre qu'il est possible de créer sa propre structure après l'école. La combinaison de compétences techniques (C++, Python) et de vision business est un modèle inspirant."
-                            data-image="https://placehold.co/150x150/F9FAFB/DC2626?text=RM2"
+                            data-title="Karim Benali: Data Scientist Senior @ Airbus (Toulouse)"
+                            data-profile="Diplômé de l'INSA Toulouse (Génie Mathématique), Karim a rejoint Airbus il y a 8 ans. Il travaille sur l'optimisation de la maintenance prédictive en analysant les données de vol. Il est expert en Python (Pandas, Scikit-learn) et en plateformes Big Data (Spark)."
+                            data-interest="Karim montre qu'il est possible de faire de la Data Science de haut niveau à Toulouse, dans un secteur passionnant. Son parcours est plus 'local' mais très concret. La maintenance prédictive est une application de l'IA avec un impact industriel direct, ce qui est motivant."
+                            data-image="./assets/RM2.jpg"
                         >
-                            <img src="https://placehold.co/150x150/F9FAFB/DC2626?text=RM2" alt="Role Model 2" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-white shadow-sm">
+                            <img src="https://placehold.co/150x150/F9FAFB/DC2626?text=KB" alt="Karim Benali" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-white shadow-sm">
                             <div class="flex items-center mb-4">
                                 <div class="flex-shrink-0 flex justify-center items-center w-12 h-12 bg-red-100 text-red-600 rounded-full">
                                     <i data-lucide="users" class="w-6 h-6"></i>
                                 </div>
-                                <h3 class="text-xl font-semibold text-gray-900 ml-4">[Role Model 2]</h3>
+                                <h3 class="text-xl font-semibold text-gray-900 ml-4">Karim Benali</h3>
                             </div>
-                            <p class="text-gray-600 mb-4 text-sm">ex: un Entrepreneur en IA</p>
+                            <p class="text-gray-600 mb-4 text-sm">Data Scientist Senior @ Airbus (Toulouse)</p>
                             <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm">
-                                <li>Projet Mobilité 2: [Lien vers ce profil]</li>
+                                <li>Expert Data (Python, Spark)</li>
+                                <li>Application industrielle (Aéro)</li>
                             </ul>
                         </button>
                         
-                        <!-- Role Model 3 (Transformé en bouton) -->
                         <button 
                             class="role-model-card bg-white border border-gray-200 rounded-xl p-6 shadow-sm text-left w-full hover:shadow-lg hover:border-red-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-300"
-                            data-title="Role Model 3: Chercheur Cybersécurité"
-                            data-profile="Exemple: Chercheur en cybersécurité à l'ANSSI. Son travail se concentre sur la sécurité des systèmes embarqués et des réseaux."
-                            data-interest="Mon intérêt : Ce profil m'attire pour son engagement dans un service public stratégique. La filière 'Sciences du Numérique' ouvre des portes vers la cybersécurité, et ce modèle montre une voie concrète pour y parvenir."
-                            data-image="https://placehold.co/150x150/F9FAFB/DC2626?text=RM3"
+                            data-title="Léa Martin: Lead Developer @ Continental (Toulouse)"
+                            data-profile="Issue d'un Master Informatique à l'Université Paul Sabatier (Toulouse III), Léa est experte en C++ et en développement de logiciels critiques. Elle dirige une équipe chez Continental travaillant sur les systèmes d'aide à la conduite (ADAS). Son parcours montre une forte expertise technique en 'software engineering'."
+                            data-interest="Ce profil est différent. Il est moins axé 'Data/AI' et plus 'Software' pur. Ayant aimé mon projet Arduino (C++), je trouve son expertise en systèmes embarqués (C++) très intéressante. C'est une voie alternative solide si je me spécialise davantage en développement logiciel qu'en data."
+                            data-image="./assets/RM3.jpg"
                         >
-                            <img src="https://placehold.co/150x150/F9FAFB/DC2626?text=RM3" alt="Role Model 3" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-white shadow-sm">
+                            <img src="https://placehold.co/150x150/F9FAFB/DC2626?text=LM" alt="Léa Martin" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-white shadow-sm">
                             <div class="flex items-center mb-4">
                                 <div class="flex-shrink-0 flex justify-center items-center w-12 h-12 bg-red-100 text-red-600 rounded-full">
                                     <i data-lucide="users" class="w-6 h-6"></i>
                                 </div>
-                                <h3 class="text-xl font-semibold text-gray-900 ml-4">[Role Model 3]</h3>
+                                <h3 class="text-xl font-semibold text-gray-900 ml-4">Léa Martin</h3>
                             </div>
-                            <p class="text-gray-600 mb-4 text-sm">ex: un Chercheur en Cybersécurité</p>
+                            <p class="text-gray-600 mb-4 text-sm">Lead Developer Embarqué @ Continental (Toulouse)</p>
                             <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm">
-                                <li>Projet Mobilité 3: [Lien vers ce profil]</li>
+                                <li>Expertise C++ / Systèmes embarqués</li>
+                                <li>Parcours universitaire (non-N7)</li>
                             </ul>
                         </button>
                     </div>
                 </div>
 
-                <!-- Expérience (Stage ouvrier du CV) -->
+                <!-- Experience (Worker internship from CV) -->
                 <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Past Experience</h3>
                 <div class="max-w-2xl mx-auto bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
                             <div>
-                                <h4 class="text-xl font-semibold text-gray-900">Stage ouvrier (Recherche)</h4>
-                                <p class="text-md font-medium text-red-600">Recherche active</p>
+                                <h4 class="text-xl font-semibold text-gray-900">Worker Internship</h4>
+                                <p class="text-md font-medium text-red-600">Lynred, Grenoble, 6 weeks</p>
                             </div>
-                            <span class="text-sm text-gray-500">Mai - Juin 2025</span>
+                            <span class="text-sm text-gray-500">May - June 2025</span>
                         </div>
                         <p class="text-gray-700 leading-relaxed">
-                            (Basé sur le profil du CV) : Actuellement en recherche d'un stage ouvrier pour la période du 12 mai au 20 juin 2025, afin de découvrir le monde de l'entreprise et d'appliquer ma rigueur et ma capacité d'adaptation.
+                            Internship completed at the end of my two years in Prépa INP at Lynred, European leader in infrared sensors, main supplier to Safran and Thales. I was a cleanroom operator in the packaging department (sensor assembly). I was able to discover how a company operates, as well as the role of engineers and operators in an industrial production context.
                         </p>
                         <hr class="my-4">
                         <div class="flex justify-between items-start">
                             <div>
-                                <h4 class="text-xl font-semibold text-gray-900">Stage d'observation</h4>
+                                <h4 class="text-xl font-semibold text-gray-900">Observation Internship</h4>
                                 <p class="text-md font-medium text-red-600">Librairie Agapè, Orléans</p>
                             </div>
-                            <span class="text-sm text-gray-500">Décembre 2019</span>
+                            <span class="text-sm text-gray-500">December 2019</span>
                         </div>
                         <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
-                            <li>Découverte du fonctionnement d'une entreprise</li>
-                            <li>Réception des commandes</li>
-                            <li>Vente</li>
+                            <li>Discovery of business operations</li>
+                            <li>Receiving orders</li>
+                            <li>Sales</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ===== 7. Contact (Fond alterné) ===== -->
+        <!-- ===== 7. Contact (Alternating background) ===== -->
         <section id="contact" class="py-24 bg-white">
             <div class="container mx-auto px-6 max-w-4xl">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">Contact Me</h2>
-                <p class="text-lg text-gray-600 mb-12 text-center">N'hésitez pas à me contacter pour un stage, un projet ou un simple échange.</p>
+                <p class="text-lg text-gray-600 mb-12 text-center">Feel free to contact me for an internship, a project, or just a chat.</p>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Email -->
@@ -394,12 +468,12 @@
                         <a href="mailto:alexis.de-lecluse-trevoedal@etu-n7.fr" class="text-red-600 hover:text-red-800 break-all">alexis.de-lecluse-trevoedal@etu-n7.fr</a>
                     </div>
                     
-                    <!-- Téléphone -->
+                    <!-- Phone -->
                     <div class="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:shadow-lg transition-shadow">
                         <div class="flex justify-center items-center w-16 h-16 bg-red-100 text-red-600 rounded-full mx-auto mb-4">
                             <i data-lucide="phone" class="w-8 h-8"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Téléphone</h3>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Phone</h3>
                         <a href="tel:+33616682261" class="text-gray-700 hover:text-gray-900">06 16 68 22 61</a>
                     </div>
 
@@ -409,11 +483,11 @@
                             <i data-lucide="linkedin" class="w-8 h-8"></i>
                         </div>
                         <h3 class="text-xl font-semibold text-gray-900 mb-2">LinkedIn</h3>
-                        <p class="text-red-600 group-hover:text-red-800 transition-colors">Mon profil LinkedIn</p>
+                        <p class="text-red-600 group-hover:text-red-800 transition-colors">My LinkedIn Profile</p>
                         
-                        <!-- Le lien "étiré" qui couvre toute la carte -->
-                        <a href="[LIEN_VERS_LINKEDIN]" target="_blank" class="absolute inset-0 rounded-xl">
-                            <span class="sr-only">Mon profil LinkedIn</span>
+                        <!-- The "stretched" link that covers the whole card -->
+                        <a href="https://www.linkedin.com/in/alexis-de-l%C3%A9cluse-3b9436353/" target="_blank" class="absolute inset-0 rounded-xl">
+                            <span class="sr-only">My LinkedIn Profile</span>
                         </a>
                     </div>
                 </div>
@@ -422,15 +496,15 @@
 
     </main>
 
-    <!-- Pied de page -->
+    <!-- Footer -->
     <footer class="border-t border-gray-200 bg-white">
         <div class="container mx-auto px-6 py-8 text-center text-gray-500">
-            <p>&copy; 2025 Alexis de Lécluse. Built as part of the ENSEEIHT Careers & Management module.</p>
+            <p>&copy; 2025 Alexis de Lécluse.</p>
             <p class="text-sm mt-2">Contact: <a href="mailto:alexis.de-lecluse-trevoedal@etu-n7.fr" class="hover:text-red-600">alexis.de-lecluse-trevoedal@etu-n7.fr</a></p>
         </div>
     </footer>
 
-    <!-- ====== MODAL (Pop-up) STRUCTURE AVEC ANIMATION ===== -->
+    <!-- ====== MODAL (Pop-up) STRUCTURE WITH ANIMATION ===== -->
     <div id="role-modal" class="fixed inset-0 z-50 flex items-center justify-center p-6 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out">
         <!-- Overlay -->
         <div id="modal-overlay" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
@@ -445,7 +519,7 @@
             <!-- Content -->
             <h3 id="modal-title" class="text-3xl font-bold text-gray-900 mb-4">[Modal Title]</h3>
             
-            <!-- Image pour la modale -->
+            <!-- Image for the modal -->
             <img id="modal-image" src="https://placehold.co/150x150/F9FAFB/DC2626?text=RM" alt="Role Model Photo" class="w-24 h-24 rounded-full mx-auto my-4 border-4 border-gray-100 shadow-md">
 
             <h4 class="text-xl font-semibold text-red-600 mt-6 mb-2">Detailed Profile</h4>
@@ -459,16 +533,16 @@
 
 
     <script>
-        // On attend que la page soit entièrement chargée pour exécuter les scripts
+        // Wait for the page to be fully loaded to execute scripts
         window.onload = function() {
-            // Initialisation des icônes Lucide (y compris pour la modale)
+            // Initialize Lucide icons (including for the modal)
             try {
                 lucide.createIcons();
             } catch (e) {
-                console.error("Erreur lors de l'initialisation de Lucide:", e);
+                console.error("Error during Lucide initialization:", e);
             }
 
-            // Script pour le menu mobile
+            // Script for mobile menu
             const menuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             
@@ -477,7 +551,7 @@
                     mobileMenu.classList.toggle('hidden');
                 });
                 
-                // Fermer le menu mobile en cliquant sur un lien
+                // Close the mobile menu when a link is clicked
                 mobileMenu.querySelectorAll('a').forEach(link => {
                     link.addEventListener('click', () => {
                         mobileMenu.classList.add('hidden');
@@ -485,7 +559,7 @@
                 });
             }
 
-            // --- Logique de la Modale "Role Model" AVEC ANIMATION ---
+            // --- "Role Model" Modal Logic WITH ANIMATION ---
             const modal = document.getElementById('role-modal');
             const modalContent = document.getElementById('modal-content');
             const modalOverlay = document.getElementById('modal-overlay');
@@ -498,7 +572,7 @@
 
             if (modal && modalContent && modalOverlay && modalCloseBtn && modalTitle && modalImage && modalProfile && modalInterest) {
                 
-                // Fonction d'ouverture
+                // Open function
                 const openModal = (card) => {
                     // Get data from clicked card
                     const title = card.getAttribute('data-title');
@@ -512,23 +586,23 @@
                     modalInterest.textContent = interest;
                     modalImage.src = imageSrc;
 
-                    // Show modal (lance les transitions)
+                    // Show modal (starts transitions)
                     modal.classList.remove('opacity-0', 'pointer-events-none');
                     modalContent.classList.remove('opacity-0', 'scale-95');
                 };
 
-                // Attacher l'événement d'ouverture aux cartes
+                // Attach open event to cards
                 roleModelCards.forEach(card => {
                     card.addEventListener('click', () => openModal(card));
                 });
 
-                // Fonction de fermeture
+                // Close function
                 const closeModal = () => {
-                    // Inverse les transitions
+                    // Reverse transitions
                     modalContent.classList.add('opacity-0', 'scale-95');
                     modal.classList.add('opacity-0');
                     
-                    // Attend la fin de la transition pour cacher la modale
+                    // Wait for the transition to end to hide the modal
                     setTimeout(() => {
                         modal.classList.add('pointer-events-none');
                     }, 300); // 300ms = duration-300
@@ -537,16 +611,15 @@
                 modalOverlay.addEventListener('click', closeModal);
                 modalCloseBtn.addEventListener('click', closeModal);
 
-                // Fermer avec la touche Echap
+                // Close with Escape key
                 document.addEventListener('keydown', (e) => {
                     if (e.key === "Escape" && !modal.classList.contains('opacity-0')) {
                         closeModal();
                     }
                 });
             }
-            // --- Fin de la logique Modale ---
+            // --- End of Modal logic ---
         };
     </script>
 </body>
 </html>
-
