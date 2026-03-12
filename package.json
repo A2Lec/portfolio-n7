@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./assets/output.css --minify",
-    "dev": "npx tailwindcss -i ./src/input.css -o ./assets/output.css --watch"
+    "build": "node ./node_modules/tailwindcss/lib/cli.js -i ./src/input.css -o ./assets/output.css --minify",
+    "dev": "node ./node_modules/tailwindcss/lib/cli.js -i ./src/input.css -o ./assets/output.css --watch"
   },
   "dependencies": {
     "@vercel/analytics": "^1.5.0"
