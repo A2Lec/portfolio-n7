@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexis de Lécluse - ENSEEIHT Digital Sciences Portfolio</title>
     <link rel="icon" href="assets/favicon.png" type="image/png">
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- SEO & Open Graph -->
+    <meta name="description" content="Portfolio of Alexis de Lécluse, ENSEEIHT Digital Sciences student. Explore my engineering projects, international experiences, and career goals.">
+    <meta property="og:title" content="Alexis de Lécluse – ENSEEIHT Digital Sciences Portfolio">
+    <meta property="og:description" content="Engineering projects, international mobility, civic engagement – discover the portfolio of Alexis de Lécluse, ENSEEIHT student.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/photo-alexis.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alexis de Lécluse – Portfolio">
+    <meta name="twitter:description" content="Engineering projects, international mobility, civic engagement – discover the portfolio of Alexis de Lécluse.">
+    <!-- Tailwind CSS (compiled) -->
+    <link rel="stylesheet" href="assets/output.css">
     <!-- Inter Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,13 +23,7 @@
     <!-- Icons (for CV, LinkedIn links, etc.) -->
     <script src="https://unpkg.com/lucide@0.303.0/dist/umd/lucide.min.js"></script>
 
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #ffffff; /* White background */
-            color: #1F2937; /* text-gray-900 */
-        }
-    </style>
+
 </head>
 <body class="antialiased">
 
@@ -41,16 +44,19 @@
                 <a href="#activities" class="font-medium text-gray-600 hover:text-red-600 transition-colors">Activities</a>
                 <a href="#career" class="font-medium text-gray-600 hover:text-red-600 transition-colors">Career</a>
                 <a href="#contact" class="font-medium text-gray-600 hover:text-red-600 transition-colors">Contact</a>
+                <a href="index-fr.html" class="font-semibold text-red-600 border border-red-600 px-3 py-0.5 rounded-full hover:bg-red-600 hover:text-white transition-colors text-sm">FR</a>
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none" aria-label="Ouvrir le menu">
+                <svg id="icon-burger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
         </nav>
 
         <!-- Mobile Menu (Hidden by default) -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2 border-b border-gray-200">
+        <div id="mobile-menu" class="md:hidden border-b border-gray-200">
+            <div class="px-6 pb-4 pt-2 space-y-2">
             <a href="#welcome" class="block text-gray-600 hover:text-red-600">Welcome</a>
             <a href="#engineering" class="block text-gray-600 hover:text-red-600">Engineering Course</a>
             <a href="#mobility" class="block text-gray-600 hover:text-red-600">International Mobility</a>
@@ -58,6 +64,9 @@
             <a href="#activities" class="block text-gray-600 hover:text-red-600">Sports & Activities</a>
             <a href="#career" class="block text-gray-600 hover:text-red-600">Career Development</a>
             <a href="#contact" class="block text-gray-600 hover:text-red-600">Contact</a>
+            <a href="index-fr.html" class="block font-semibold text-red-600 hover:text-red-800">→ Version française</a>
+            </div>
+        </div>
         </div>
     </header>
 
@@ -70,11 +79,6 @@
             
                 <!-- Left Column: Text + Photo -->
                 <div class="text-center lg:text-left">
-                    <!-- Photo Placeholder -->
-                    <img src="./assets/photo-alexis.jpg" 
-                         alt="Photo of Alexis de Lécluse" 
-                         class="w-40 h-40 rounded-full mx-auto lg:mx-0 mb-8 shadow-lg border-4 border-white object-cover">
-                         
                     <h1 class="text-5xl md:text-6xl font-bold tracking-tight text-gray-900">
                         Hi, I'm <span class="text-red-600">Alexis de Lécluse</span>
                     </h1>
@@ -94,25 +98,15 @@
                     </div>
                 </div>
                 
-                <!-- Right Column: "Elevator Pitch" Video -->
-                <div class="w-full">
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-lg">
-                        <div class="flex justify-center items-center w-16 h-16 bg-red-100 text-red-600 rounded-full mx-auto mb-4">
-                            <i data-lucide="video" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">UVP Elevator Pitch</h3>
-                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">My Unique Value Proposal video.</p>
-
-                        <div class="aspect-video bg-gray-200 rounded-lg mt-4 overflow-hidden">
-                            <iframe 
-                                class="w-full h-full" 
-                                src="https://www.youtube.com/embed/2SXiXwzE3EI" 
-                                title="Elevator Pitch Video" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                        </div>
+                <!-- Right Column: Profile Photo -->
+                <div class="w-full flex items-center justify-center">
+                    <div class="relative w-full max-w-sm">
+                        <!-- Decorative offset background -->
+                        <div class="absolute -bottom-5 -right-5 w-full h-full rounded-3xl bg-gradient-to-br from-red-100 to-red-50 border border-red-100"></div>
+                        <!-- Photo -->
+                        <img src="./assets/photo-alexis.jpg"
+                             alt="Portrait of Alexis de Lécluse, ENSEEIHT Digital Sciences student"
+                             class="relative w-full object-cover object-top aspect-[3/4] rounded-3xl shadow-2xl border-4 border-white">
                     </div>
                 </div>
 
@@ -120,11 +114,108 @@
         </section>
 
         <!-- ===== 2. Engineering Course (Alternating background) ===== -->
-        <section id="engineering" class="py-24 bg-gray-50">
+        <section id="engineering" class="py-24 bg-gray-50 fade-in-section">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">Engineering Course</h2>
                 <p class="text-lg text-gray-600 mb-12 text-center">Projects & productions from my Digital Sciences curriculum.</p>
-                
+
+                <!-- ===== Skills ===== -->
+                <div class="lg:max-w-4xl lg:mx-auto mb-16">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-10 text-center">Skills</h3>
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-12">
+
+                        <!-- Languages -->
+                        <div>
+                            <h4 class="text-sm font-semibold text-red-600 uppercase tracking-wider mb-5 pb-2 border-b border-gray-200">Languages</h4>
+                            <ul class="space-y-4">
+                                <li class="flex items-center gap-4">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-8 h-8 flex-shrink-0" alt="Python">
+                                    <span class="text-base text-gray-700">Python</span>
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="w-8 h-8 flex-shrink-0" alt="C++">
+                                    <span class="text-base text-gray-700">C++ / Arduino</span>
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="w-8 h-8 flex-shrink-0" alt="Java">
+                                    <span class="text-base text-gray-700">Java</span>
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-8 h-8 flex-shrink-0" alt="SQL">
+                                    <span class="text-base text-gray-700">SQL</span>
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center bg-gray-800 rounded text-xs font-bold text-white leading-none">Ada</div>
+                                    <span class="text-base text-gray-700">Ada</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Data Processing -->
+                        <div>
+                            <h4 class="text-sm font-semibold text-red-600 uppercase tracking-wider mb-5 pb-2 border-b border-gray-200">Data Processing</h4>
+                            <ul class="space-y-4">
+                                <li class="flex items-center gap-4">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" class="w-8 h-8 flex-shrink-0" alt="Matlab">
+                                    <span class="text-base text-gray-700">Matlab</span>
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" class="w-8 h-8 flex-shrink-0" alt="NumPy">
+                                    <span class="text-base text-gray-700">NumPy</span>
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" class="w-8 h-8 flex-shrink-0" alt="Pandas">
+                                    <span class="text-base text-gray-700">Pandas</span>
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" class="w-8 h-8 flex-shrink-0" alt="Scikit-learn">
+                                    <span class="text-base text-gray-700">Scikit-learn</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Tools & Systems -->
+                        <div>
+                            <h4 class="text-sm font-semibold text-red-600 uppercase tracking-wider mb-5 pb-2 border-b border-gray-200">Tools & Systems</h4>
+                            <ul class="space-y-4">
+                                <li class="flex items-center gap-4">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" class="w-8 h-8 flex-shrink-0" alt="Windows">
+                                    <span class="text-base text-gray-700">Windows</span>
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" class="w-8 h-8 flex-shrink-0" alt="Linux">
+                                    <span class="text-base text-gray-700">Linux</span>
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-8 h-8 flex-shrink-0" alt="Git">
+                                    <span class="text-base text-gray-700">Git</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Soft Skills -->
+                        <div>
+                            <h4 class="text-sm font-semibold text-red-600 uppercase tracking-wider mb-5 pb-2 border-b border-gray-200">Soft Skills</h4>
+                            <ul class="space-y-4">
+                                <li class="flex items-center gap-4">
+                                    <i data-lucide="users" class="w-8 h-8 flex-shrink-0 text-gray-500"></i>
+                                    <span class="text-base text-gray-700">Teamwork</span>
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <i data-lucide="clipboard-list" class="w-8 h-8 flex-shrink-0 text-gray-500"></i>
+                                    <span class="text-base text-gray-700">Project Management</span>
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <i data-lucide="lightbulb" class="w-8 h-8 flex-shrink-0 text-gray-500"></i>
+                                    <span class="text-base text-gray-700">Creativity</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ===== End Skills ===== -->
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:max-w-4xl lg:mx-auto">
                     <!-- Project 1 (Commented out)
                     <div class="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg hover:border-red-400 transition-all duration-300">
@@ -140,6 +231,40 @@
                             </div>
                         </div>
                     </div> -->
+
+                    <!-- Project 4: Financial Prediction Model -->
+                    <div class="project-card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg hover:border-red-400 transition-all duration-300">
+                        <img src="./assets/projet-xgboost.jpg" alt="Financial Prediction Model Thumbnail" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Financial Prediction Model</h3>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                Development of a machine learning model to predict the evolution of stock market indices. The project involved data collection, feature engineering, and training several models (Random Forest, XGBoost) to compare their performance in forecasting market trends.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">Python</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">RandomForest</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">XGBoost</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">Scikit-learn</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Network Router Simulation -->
+                    <div class="project-card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg hover:border-red-400 transition-all duration-300">
+                        <img src="./assets/projet-routeur.jpg" alt="Network Router Simulation Thumbnail" class="w-full h-48 object-contain bg-gray-100">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Network Router Simulation</h3>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                Complete software modelling of a network router in Ada: queuing, routing, traffic management, and cache handling. The project was structured using modular design principles, with chained data structures and trees to simulate realistic packet routing behaviour.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">Ada</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">Data Structures</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">Networking</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">Modular Design</span>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Project 2 -->
                     <div class="project-card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg hover:border-red-400 transition-all duration-300">
@@ -158,9 +283,9 @@
                         </div>
                     </div>
                     
-                    <!-- Project 3 (Placeholder) -->
+                    <!-- Project 3 -->
                     <div class="project-card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg hover:border-red-400 transition-all duration-300">
-                        <img src="./assets/projet_agenda.png" alt="Project 3 Thumbnail" class="w-full h-48 object-contain">
+                        <img src="./assets/projet_agenda.png" alt="Google Calendar Clone Thumbnail" class="w-full h-48 object-contain">
                         <div class="p-6">
                             <h3 class="text-xl font-semibold text-gray-900 mb-2">Google Calendar Clone</h3>
                             <p class="text-gray-600 mb-4 text-sm leading-relaxed">
@@ -179,7 +304,7 @@
         </section>
 
         <!-- ===== 3. International Mobility ===== -->
-        <section id="mobility" class="py-24 bg-white">
+        <section id="mobility" class="py-24 bg-white fade-in-section">
             <div class="container mx-auto px-6 max-w-4xl">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">International Mobility</h2>
                 <p class="text-lg text-gray-600 mb-12 text-center">My language skills and international aspirations.</p>
@@ -226,7 +351,7 @@
 
 
                 <!-- ===== 4. Sustainability & Civic Engagement (Icons Updated) ===== -->
-        <section id="engagement" class="py-24 bg-gray-50">
+        <section id="engagement" class="py-24 bg-gray-50 fade-in-section">
             <div class="container mx-auto px-6 max-w-4xl">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">Sustainability & Civic Engagement</h2>
                 <p class="text-lg text-gray-600 mb-12 text-center">My involvement in community and associative activities.</p>
@@ -294,7 +419,7 @@
 
 
         <!-- ===== 5. Sport & other activities ===== -->
-        <section id="activities" class="py-24 bg-white">
+        <section id="activities" class="py-24 bg-white fade-in-section">
             <div class="container mx-auto px-6 max-w-4xl">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">Activities</h2>
                 <p class="text-lg text-gray-600 mb-12 text-center">My passions outside of engineering.</p>
@@ -327,7 +452,7 @@
         </section>
 
         <!-- ===== 6. Career Development ===== -->
-        <section id="career" class="py-24 bg-gray-50">
+        <section id="career" class="py-24 bg-gray-50 fade-in-section">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">Career Development</h2>
                 <p class="text-lg text-gray-600 mb-12 text-center">My professional documents, goals, and inspirations.</p>
@@ -357,12 +482,13 @@
                         
                        <button 
                             class="role-model-card bg-white border border-gray-200 rounded-xl p-6 shadow-sm text-left w-full hover:shadow-lg hover:border-red-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-300"
+                            aria-label="View Laurent FAINSIN's profile – Applied Science Engineer at Mistral AI"
                             data-title="Laurent FAINSIN - Applied Science Engineer"
                             data-profile="Laurent FAINSIN is an Applied Science Engineer at Mistral AI. He is a graduate engineer from ENSEEIHT (Master's degree, Computer Science). His career shows a rapid trajectory in high-level AI roles, moving from internships at IRIT and Safran to an ML Engineer role at Finegrain, and now to his current position at Mistral AI."
                             data-interest="Laurent's profile is highly inspiring as he represents a top-tier path for an ENSEEIHT Computer Science graduate. His journey directly into ML research and then to Mistral AI—one of the most prominent AI companies—demonstrates the high value of the N7 degree in the field. His interests in Machine Learning and Computer Graphics align perfectly with my own."
                             data-image="assets/laurent_fainsin.jpeg">
 
-                            <img src="assets/laurent_fainsin.jpeg" alt="Laurent Fainsin" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-white shadow-sm object-cover">
+                            <img src="assets/laurent_fainsin.jpeg" alt="Laurent FAINSIN, Applied Science Engineer at Mistral AI" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-white shadow-sm object-cover">
                             
                             <div class="flex items-center mb-4">
                                 <div class="flex-shrink-0 flex justify-center items-center w-12 h-12 bg-red-100 text-red-600 rounded-full">
@@ -379,12 +505,13 @@
                         
                         <button 
                             class="role-model-card bg-white border border-gray-200 rounded-xl p-6 shadow-sm text-left w-full hover:shadow-lg hover:border-red-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-300"
+                            aria-label="View Pierre BERJON's profile – Data Scientist at Airbus"
                             data-title="Pierre BERJON - Data Scientist"
                             data-profile="Pierre BERJON is a Data Scientist at Airbus, specializing in Computer Vision. He holds a dual degree from ENSEEIHT (Master of Engineering & Specialized Master in AI). His career shows a clear progression at Airbus, starting as an intern, then advancing to R&D Machine Learning Expert (Satellite Imagery) before his current role."
                             data-interest="Pierre's profile is a perfect example of a successful post-ENSEEIHT (N7) career in the AI/Digital Sciences field. His career shows a direct and successful trajectory from an N7 degree to a highly technical position (Computer Vision) at a major local company (Airbus). This is a trajectory I am aiming for, combining my academic specialization with concrete industrial application."
                             data-image="assets/pierre_berjon.jpeg"
                         >
-                            <img src="assets/pierre_berjon.jpeg" alt="Pierre Berjon" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-white shadow-sm object-cover">
+                            <img src="assets/pierre_berjon.jpeg" alt="Pierre BERJON, Data Scientist – Computer Vision at Airbus" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-white shadow-sm object-cover">
                             
                             <div class="flex items-center mb-4">
                                 <div class="flex-shrink-0 flex justify-center items-center w-12 h-12 bg-red-100 text-red-600 rounded-full">
@@ -401,12 +528,13 @@
                         
                        <button 
                             class="role-model-card bg-white border border-gray-200 rounded-xl p-6 shadow-sm text-left w-full hover:shadow-lg hover:border-red-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-300"
+                            aria-label="View Clémence Lanfranchi's profile – AI Scientist at Mistral AI"
                             data-title="Clémence Lanfranchi - AI Scientist"
                             data-profile="Clémence Lanfranchi is an AI Scientist at Mistral AI. Her academic background is exceptional, featuring a 'Diplôme d'ingénieur' from École Polytechnique and a Master's degree in Data Science from ETH Zürich. Her career includes significant R&D experience at Oracle Labs and research-focused roles during her studies, such as her Master's Thesis at ETH and a research project with DS3Lab/Ebay."
                             data-interest="Clémence's profile is a powerful model for combining a prestigious French engineering degree (Polytechnique) with high-level international specialization (ETH Zürich). Her mobility to Switzerland for her Master's degree clearly paved the way for top-tier R&D roles at Oracle and now Mistral AI. This 'French Grande École + international Master's' path is a highly effective strategy that I will strongly consider for my own."
                             data-image="assets/clemence_lanfranchi.jpeg"
                         >
-                            <img src="assets/clemence_lanfranchi.jpeg" alt="Clémence Lanfranchi" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-white shadow-sm object-cover">
+                            <img src="assets/clemence_lanfranchi.jpeg" alt="Clémence Lanfranchi, AI Scientist at Mistral AI" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-white shadow-sm object-cover">
                             
                             <div class="flex items-center mb-4">
                                 <div class="flex-shrink-0 flex justify-center items-center w-12 h-12 bg-red-100 text-red-600 rounded-full">
@@ -427,36 +555,52 @@
                 <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Past Experience</h3>
                 <div class="max-w-2xl mx-auto bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
                     <div class="p-6">
-                        <div class="flex justify-between items-start mb-2">
-                            <div>
-                                <h4 class="text-xl font-semibold text-gray-900">Worker Internship</h4>
-                                <p class="text-md font-medium text-red-600">Lynred, Grenoble, 6 weeks</p>
+                        <!-- Lynred -->
+                        <div class="flex items-start gap-4 mb-2">
+                            <div class="flex-shrink-0">
+                                <img src="https://www.google.com/s2/favicons?domain=lynred.com&sz=64" alt="Lynred" class="w-12 h-12 rounded-lg object-contain border border-gray-100 p-1">
                             </div>
-                            <span class="text-sm text-gray-500">May - June 2025</span>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start mb-2">
+                                    <div>
+                                        <h4 class="text-xl font-semibold text-gray-900">Worker Internship</h4>
+                                        <p class="text-md font-medium text-red-600">Lynred, Grenoble, 6 weeks</p>
+                                    </div>
+                                    <span class="text-sm text-gray-500 whitespace-nowrap ml-4">May - June 2025</span>
+                                </div>
+                                <p class="text-gray-700 leading-relaxed">
+                                    Internship completed at the end of my two years in Prépa INP at Lynred, European leader in infrared sensors, main supplier to Safran and Thales. I was a cleanroom operator in the packaging department (sensor assembly). I was able to discover how a company operates, as well as the role of engineers and operators in an industrial production context.
+                                </p>
+                            </div>
                         </div>
-                        <p class="text-gray-700 leading-relaxed">
-                            Internship completed at the end of my two years in Prépa INP at Lynred, European leader in infrared sensors, main supplier to Safran and Thales. I was a cleanroom operator in the packaging department (sensor assembly). I was able to discover how a company operates, as well as the role of engineers and operators in an industrial production context.
-                        </p>
                         <hr class="my-4">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h4 class="text-xl font-semibold text-gray-900">Observation Internship</h4>
-                                <p class="text-md font-medium text-red-600">Librairie Agapè, Orléans</p>
+                        <!-- Librairie Agapè -->
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 rounded-lg bg-gray-800 text-white text-xl font-bold flex items-center justify-center">A</div>
                             </div>
-                            <span class="text-sm text-gray-500">December 2019</span>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="text-xl font-semibold text-gray-900">Observation Internship</h4>
+                                        <p class="text-md font-medium text-red-600">Librairie Agapè, Orléans</p>
+                                    </div>
+                                    <span class="text-sm text-gray-500 whitespace-nowrap ml-4">December 2019</span>
+                                </div>
+                                <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                                    <li>Discovery of business operations</li>
+                                    <li>Receiving orders</li>
+                                    <li>Sales</li>
+                                </ul>
+                            </div>
                         </div>
-                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
-                            <li>Discovery of business operations</li>
-                            <li>Receiving orders</li>
-                            <li>Sales</li>
-                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ===== 7. Contact (Alternating background) ===== -->
-        <section id="contact" class="py-24 bg-white">
+        <section id="contact" class="py-24 bg-white fade-in-section">
             <div class="container mx-auto px-6 max-w-4xl">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">Contact Me</h2>
                 <p class="text-lg text-gray-600 mb-12 text-center">Feel free to contact me for an internship, a project, or just a chat.</p>
@@ -468,7 +612,7 @@
                             <i data-lucide="mail" class="w-8 h-8"></i>
                         </div>
                         <h3 class="text-xl font-semibold text-gray-900 mb-2">Email</h3>
-                        <a href="mailto:alexis.de-lecluse-trevoedal@etu-n7.fr" class="text-red-600 hover:text-red-800 break-all">alexis.deleclusetrevoedal@etu-n7.fr</a>
+                        <a href="mailto:a2lecluse@gmail.com" class="text-red-600 hover:text-red-800 break-all">a2lecluse@gmail.com</a>
                     </div>
                     
                     <!-- Phone -->
@@ -502,8 +646,8 @@
     <!-- Footer -->
     <footer class="border-t border-gray-200 bg-white">
         <div class="container mx-auto px-6 py-8 text-center text-gray-500">
-            <p>&copy; 2025 Alexis de Lécluse.</p>
-            <p class="text-sm mt-2">Contact: <a href="mailto:alexis.de-lecluse-trevoedal@etu-n7.fr" class="hover:text-red-600">alexis.de-lecluse-trevoedal@etu-n7.fr</a></p>
+            <p>&copy; 2026 Alexis de Lécluse.</p>
+            <p class="text-sm mt-2">Contact: <a href="mailto:a2lecluse@gmail.com" class="hover:text-red-600">a2lecluse@gmail.com</a></p>
         </div>
     </footer>
 
@@ -515,7 +659,7 @@
         <!-- Modal Content -->
         <div id="modal-content" class="relative bg-white rounded-xl shadow-2xl max-w-2xl w-full p-8 z-10 mx-auto opacity-0 scale-95 transition-all duration-300 ease-in-out">
             <!-- Close Button -->
-            <button id="modal-close-btn" class="absolute top-4 right-4 text-gray-500 hover:text-red-600 transition-colors">
+            <button id="modal-close-btn" aria-label="Close profile modal" class="absolute top-4 right-4 text-gray-500 hover:text-red-600 transition-colors">
                 <i data-lucide="x" class="w-6 h-6"></i>
             </button>
             
@@ -523,7 +667,7 @@
             <h3 id="modal-title" class="text-3xl font-bold text-gray-900 mb-4">[Modal Title]</h3>
             
             <!-- Image for the modal -->
-            <img id="modal-image" src="https://placehold.co/150x150/F9FAFB/DC2626?text=RM" alt="Role Model Photo" class="w-24 h-24 rounded-full mx-auto my-4 border-4 border-gray-100 shadow-md">
+            <img id="modal-image" src="https://placehold.co/150x150/F9FAFB/DC2626?text=RM" alt="" aria-hidden="true" class="w-24 h-24 rounded-full mx-auto my-4 border-4 border-gray-100 shadow-md">
 
             <h4 class="text-xl font-semibold text-red-600 mt-6 mb-2">Detailed Profile</h4>
             <p id="modal-profile" class="text-gray-700 leading-relaxed whitespace-pre-wrap">[Profile details...]</p>
@@ -548,16 +692,22 @@
             // Script for mobile menu
             const menuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
-            
+            const iconBurger = document.getElementById('icon-burger');
+            const iconClose = document.getElementById('icon-close');
+
             if (menuButton && mobileMenu) {
                 menuButton.addEventListener('click', () => {
-                    mobileMenu.classList.toggle('hidden');
+                    const isOpen = mobileMenu.classList.toggle('menu-open');
+                    iconBurger.classList.toggle('hidden', isOpen);
+                    iconClose.classList.toggle('hidden', !isOpen);
                 });
-                
+
                 // Close the mobile menu when a link is clicked
                 mobileMenu.querySelectorAll('a').forEach(link => {
                     link.addEventListener('click', () => {
-                        mobileMenu.classList.add('hidden');
+                        mobileMenu.classList.remove('menu-open');
+                        iconBurger.classList.remove('hidden');
+                        iconClose.classList.add('hidden');
                     });
                 });
             }
@@ -620,6 +770,21 @@
                         closeModal();
                     }
                 });
+            }
+            // --- Scroll fade-in animations (IntersectionObserver) ---
+            const fadeInSections = document.querySelectorAll('.fade-in-section');
+            if ('IntersectionObserver' in window) {
+                const sectionObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            sectionObserver.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                fadeInSections.forEach(section => sectionObserver.observe(section));
+            } else {
+                fadeInSections.forEach(section => section.classList.add('is-visible'));
             }
             // --- End of Modal logic ---
         };
