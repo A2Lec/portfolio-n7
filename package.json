@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./assets/output.css --minify",
+    "build": "npx tailwindcss -i ./src/input.css -o ./assets/output.css --minify",
     "dev": "node watch-build.js"
   },
   "dependencies": {
