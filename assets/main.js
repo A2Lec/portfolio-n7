@@ -66,6 +66,13 @@ window.onload = function() {
         });
     }
 
+    document.querySelectorAll('a[href="#"]').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
+
     const fadeInSections = document.querySelectorAll('.fade-in-section');
     if ('IntersectionObserver' in window) {
         const sectionObserver = new IntersectionObserver((entries) => {
