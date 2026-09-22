@@ -207,7 +207,7 @@ body {
 
 /* ── Reduced motion ── */
 @media (prefers-reduced-motion: reduce) {
-    .diagonal-divider { animation: none; height: 115%; width: 60%; }
+    .diagonal-divider { animation: none; height: 115%; }
     .hero-text-side, .hero-photo-side { clip-path: none; animation: none; }
     .photo-frame img { animation: none; filter: none; transform: none; }
     .photo-scan, .focus-bracket { display: none; }
@@ -218,6 +218,10 @@ body {
         opacity: 1;
         transition: none;
     }
+}
+
+@media (max-width: 767px) and (prefers-reduced-motion: reduce) {
+    .diagonal-divider { width: 60%; height: 3px; }
 }
 
 /* ── Mobile menu ── */
