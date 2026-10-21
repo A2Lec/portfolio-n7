@@ -122,8 +122,8 @@
                                     <span class="text-sm text-gray-700">SQL</span>
                                 </li>
                                 <li class="flex items-center gap-3">
-                                    <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center bg-gray-800 rounded text-[10px] font-bold text-white leading-none">Ada</div>
-                                    <span class="text-sm text-gray-700">Ada</span>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ocaml/ocaml-original.svg" class="w-6 h-6 flex-shrink-0" alt="OCaml">
+                                    <span class="text-sm text-gray-700">OCaml</span>
                                 </li>
                             </ul>
                         </div>
@@ -212,13 +212,64 @@
                 <h3 class="font-display text-2xl font-bold text-gray-900 mt-16 mb-8 text-center">Projects</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
 
+                    <!-- Aeris - AGIR Hackathon -->
+                    <div class="project-card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <img src="./assets/projet_aeris.jpg" alt="Aeris drone deployment map with coverage areas" class="w-full aspect-video object-cover object-top bg-gray-100 border-b border-gray-100">
+                        <div class="p-6">
+                            <span class="inline-flex items-center gap-1.5 bg-red-50 text-red-700 border border-red-200 text-xs font-semibold px-3 py-1 rounded-full mb-3"><i data-lucide="trophy" class="w-3.5 h-3.5"></i>AGIR Hackathon, 2nd place</span>
+                            <h4 class="font-display text-xl font-semibold text-gray-900 mb-2">Aeris: Drone Coordination</h4>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed text-justify">
+                                With a team of six ENSEEIHT students, we finished 2nd at the AGIR hackathon, organised with the Occitanie Gendarmerie Region (October 2026). In a single day, we built a decision-support tool to size and coordinate drone deployments in gendarmerie operations: the operator draws the area, priority and no-fly zones, and Aeris proposes optimised drone placements, separates the airspace and recomputes the deployment in real time when a drone becomes unavailable. As lead architect and integrator, I set up the monorepo, the CI, the module contracts and the API.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">TypeScript</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">React</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Leaflet</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Fastify</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">WebSocket</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Zod</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Optimisation</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Teamwork</span>
+                            </div>
+                            <div class="mt-6 flex justify-center">
+                                <a href="https://github.com/Tug2co/aeris" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-gray-700 border border-gray-300 font-medium text-sm py-2.5 px-8 rounded-lg transition-colors">
+                                    <i data-lucide="github" class="w-4 h-4"></i>View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Laser-Guided Drone Defense System -->
+                    <div class="project-card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-video bg-gray-900 flex flex-col items-center justify-center gap-3" role="img" aria-label="Laser guidance and drone illustration">
+                            <i data-lucide="crosshair" class="w-14 h-14 text-red-500"></i>
+                            <i data-lucide="plane" class="w-6 h-6 text-gray-400"></i>
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-flex items-center gap-1.5 bg-amber-50 text-amber-700 border border-amber-200 text-xs font-semibold px-3 py-1 rounded-full mb-3"><span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>In progress</span>
+                            <h4 class="font-display text-xl font-semibold text-gray-900 mb-2">Laser-Guided Drone Defense System</h4>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed text-justify">
+                                Ongoing engineering study carried out for a defense start-up through N7 Consulting, the Junior Enterprise of ENSEEIHT. Our team is working on a drone-based laser-guidance defense system, and I am in charge of developing the computer vision algorithms for target detection and tracking. Due to confidentiality, details of the project will be shared later.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Junior Enterprise</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Defense</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Drones</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Laser Guidance</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Computer Vision</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Object Tracking</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Engineering Study</span>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- TrackMyApps -->
                     <div class="project-card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                        <img src="./assets/projet_trackmyapps.png" alt="TrackMyApps dashboard thumbnail" class="w-full h-48 object-contain bg-gray-100">
+                        <img src="./assets/projet_trackmyapps.png" alt="TrackMyApps dashboard thumbnail" class="w-full aspect-video object-cover object-top bg-gray-100 border-b border-gray-100">
                         <div class="p-6">
                             <h4 class="font-display text-xl font-semibold text-gray-900 mb-2">TrackMyApps</h4>
                             <p class="text-gray-600 mb-4 text-sm leading-relaxed text-justify">
-                                TrackMyApps is a SaaS application designed to help students centralize and track internship, apprenticeship, and job applications. It brings offers, companies, documents, reminders, and follow-up exchanges into a single workspace to make the application process clearer and more efficient. The backend is built with Node.js, Express, TypeScript, Prisma, and PostgreSQL, while the frontend uses React, TypeScript, Vite, Tailwind CSS, and Shadcn/ui.
+                                TrackMyApps is a SaaS application that helps students centralize and track their internship, apprenticeship and job applications. Alongside a Kanban board, reminders, calendar sync and document storage, it features an AI interview simulator (Google Gemini) with chat and voice modes, live speech-to-text and spoken answers. The app was recently redesigned around its own design system, with password reset, a one-click demo account and GDPR-compliant legal documents. The backend runs on Node.js, Express, TypeScript, Prisma and PostgreSQL as Vercel serverless functions, while the frontend uses React, Vite, Tailwind CSS and shadcn/ui.
                             </p>
                             <div class="flex flex-wrap gap-2">
                                 <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Node.js</span>
@@ -227,12 +278,12 @@
                                 <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Prisma</span>
                                 <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">PostgreSQL</span>
                                 <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">React</span>
-                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Vite</span>
                                 <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Tailwind CSS</span>
-                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Shadcn/ui</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Gemini AI</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Vercel</span>
                             </div>
                             <div class="mt-6 flex justify-center">
-                                <a href="https://track-myapps.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-white hover:bg-gray-100 text-gray-700 border border-gray-300 font-medium text-sm py-2.5 px-8 rounded-lg transition-colors">
+                                <a href="https://track-myapps.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-gray-700 border border-gray-300 font-medium text-sm py-2.5 px-8 rounded-lg transition-colors">
                                     Visit TrackMyApps
                                 </a>
                             </div>
@@ -241,22 +292,23 @@
 
                     <!-- Mass Creator -->
                     <div class="project-card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                        <img src="./assets/projet_masscreator.png" alt="Mass Creator web application thumbnail" class="w-full h-48 object-contain bg-gray-100">
+                        <img src="./assets/projet_masscreator.png" alt="Mass Creator web application thumbnail" class="w-full aspect-video object-cover object-top bg-gray-100 border-b border-gray-100">
                         <div class="p-6">
                             <h4 class="font-display text-xl font-semibold text-gray-900 mb-2">Mass Creator</h4>
                             <p class="text-gray-600 mb-4 text-sm leading-relaxed text-justify">
-                                Commissioned by the Toulouse Student Parish, Mass Creator is a modern web app built to help parishes and liturgy teams prepare celebrations. It centralizes a song library, lets users compose masses in a few clicks for each liturgical moment, and enables easy sharing through a public link. With advanced search, sheet music import, and AI-assisted analysis, Mass Creator simplifies music planning and saves valuable time for choir leaders and worship teams.
+                                Commissioned by the Toulouse Student Parish, Mass Creator helps choirs and liturgy teams prepare celebrations. It brings together a library of more than 500 songs with their sheet music, lets users compose a mass for each liturgical moment (or generate one automatically for the liturgical season) and share it through a short link. Sheet music is analysed by AI, and all the scores of a mass can be merged into a single PDF with a clickable table of contents. Installable as a PWA that works offline, it relies on secured API routes (validation, rate limiting, read-only database access from the browser) and a CI pipeline running lint, type-checking, tests and build.
                             </p>
                             <div class="flex flex-wrap gap-2">
-                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Web App</span>
-                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Liturgy Planning</span>
-                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Advanced Search</span>
-                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Sheet Music Import</span>
-                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">AI-assisted Analysis</span>
-                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Public Sharing</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Next.js</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">TypeScript</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Supabase</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Gemini AI</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">PWA</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Vitest</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">GitHub Actions</span>
                             </div>
                             <div class="mt-6 flex justify-center">
-                                <a href="https://mass-creator.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-white hover:bg-gray-100 text-gray-700 border border-gray-300 font-medium text-sm py-2.5 px-8 rounded-lg transition-colors">
+                                <a href="https://mass-creator.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-gray-700 border border-gray-300 font-medium text-sm py-2.5 px-8 rounded-lg transition-colors">
                                     Visit Mass Creator
                                 </a>
                             </div>
@@ -280,23 +332,6 @@
                         </div>
                     </div>
 
-                    <!-- Network Router Simulation -->
-                    <div class="project-card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                        <img src="./assets/projet-routeur.jpg" alt="Network Router Simulation Thumbnail" class="w-full h-48 object-contain bg-gray-100">
-                        <div class="p-6">
-                            <h4 class="font-display text-xl font-semibold text-gray-900 mb-2">Network Router Simulation</h4>
-                            <p class="text-gray-600 mb-4 text-sm leading-relaxed text-justify">
-                                Complete software modelling of a network router in Ada: queuing, routing, traffic management, and cache handling. The project was structured using modular design principles, with chained data structures and trees to simulate realistic packet routing behaviour.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Ada</span>
-                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Data Structures</span>
-                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Networking</span>
-                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Modular Design</span>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Solar Tracker -->
                     <div class="project-card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
                         <img src="./assets/projet_arduino.jpg" alt="Solar Tracker Thumbnail" class="w-full h-48 object-contain bg-gray-100">
@@ -314,23 +349,6 @@
                         </div>
                     </div>
 
-                    <!-- Google Calendar Clone -->
-                    <div class="project-card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                        <img src="./assets/projet_agenda.png" alt="Google Calendar Clone Thumbnail" class="w-full h-48 object-contain">
-                        <div class="p-6">
-                            <h4 class="font-display text-xl font-semibold text-gray-900 mb-2">Google Calendar Clone</h4>
-                            <p class="text-gray-600 mb-4 text-sm leading-relaxed text-justify">
-                                Creation of a web app based on the principle of Google Calendar: ability to manage a schedule with features like adding or deleting events, choosing slot colors, event types... All synchronized online, allowing multiple devices to access the same calendar. This allowed me to familiarize myself with Google's Firebase tool for managing a database in the cloud.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">HTML</span>
-                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">CSS</span>
-                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">JavaScript</span>
-                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Firebase</span>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
@@ -339,7 +357,7 @@
         <section id="career" class="py-16 md:py-24 bg-white fade-in-section">
             <div class="container mx-auto px-6 max-w-6xl">
                 <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">Career</h2>
-                <p class="text-lg text-gray-500 mb-12 text-center">Professional documents, goals, and inspirations.</p>
+                <p class="text-lg text-gray-500 mb-12 text-center">Professional documents and past experience.</p>
 
                 <div class="flex flex-col sm:flex-row flex-wrap gap-2.5 sm:gap-4 justify-center items-center mb-16">
                     <a href="./assets/CV_Alexis_de_Lecluse_EN.pdf" download class="bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 sm:py-3 sm:px-6 rounded-lg transition-colors flex items-center justify-center space-x-2 shadow-sm text-sm sm:text-base w-full sm:w-auto" target="_blank" rel="noopener noreferrer">
@@ -357,7 +375,7 @@
                 </div>
 
                 <h3 class="font-display text-2xl font-bold text-gray-900 mb-6 text-center">Past Experience</h3>
-                <div class="max-w-2xl mx-auto bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden mb-16">
+                <div class="max-w-2xl mx-auto bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
                     <div class="p-4 sm:p-6">
                         <!-- Delair -->
                         <div class="flex items-start gap-3 sm:gap-4 mb-2">
@@ -428,63 +446,6 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Role Models -->
-                <div class="max-w-6xl mx-auto">
-                    <h3 class="font-display text-2xl font-bold text-gray-900 mb-6 text-center">Role Models</h3>
-                    <p class="text-gray-500 mb-8 text-center max-w-2xl mx-auto">Analysis of 3 inspiring profiles and 3 potential mobility projects.</p>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
-
-                        <button
-                            class="role-model-card bg-white border border-gray-200 rounded-xl p-6 shadow-sm text-left w-full hover:shadow-lg transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-red-300"
-                            aria-label="View Laurent FAINSIN's profile – Applied Science Engineer at Mistral AI"
-                            data-title="Laurent FAINSIN - Applied Science Engineer"
-                            data-profile="Laurent FAINSIN is an Applied Science Engineer at Mistral AI. He is a graduate engineer from ENSEEIHT (Master's degree, Computer Science). His career shows a rapid trajectory in high-level AI roles, moving from internships at IRIT and Safran to an ML Engineer role at Finegrain, and now to his current position at Mistral AI."
-                            data-interest="Laurent's profile is highly inspiring as he represents a top-tier path for an ENSEEIHT Computer Science graduate. His journey directly into ML research and then to Mistral AI—one of the most prominent AI companies—demonstrates the high value of the N7 degree in the field. His interests in Machine Learning and Computer Graphics align perfectly with my own."
-                            data-image="assets/laurent_fainsin.jpeg">
-                            <img src="assets/laurent_fainsin.jpeg" alt="Laurent FAINSIN, Applied Science Engineer at Mistral AI" class="w-16 h-16 rounded-full mx-auto mb-4 border-2 border-gray-100 object-cover">
-                            <h4 class="font-display text-lg font-semibold text-gray-900 text-center">Laurent FAINSIN</h4>
-                            <p class="text-gray-500 mb-3 text-sm text-center">Applied Science Engineer, Mistral AI</p>
-                            <ul class="list-disc list-inside space-y-1 text-gray-600 text-sm">
-                                <li>ENSEEIHT (N7) Graduate</li>
-                                <li>Specialized in ML & AI</li>
-                            </ul>
-                        </button>
-
-                        <button
-                            class="role-model-card bg-white border border-gray-200 rounded-xl p-6 shadow-sm text-left w-full hover:shadow-lg transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-red-300"
-                            aria-label="View Pierre BERJON's profile – Data Scientist at Airbus"
-                            data-title="Pierre BERJON - Data Scientist"
-                            data-profile="Pierre BERJON is a Data Scientist at Airbus, specializing in Computer Vision. He holds a dual degree from ENSEEIHT (Master of Engineering & Specialized Master in AI). His career shows a clear progression at Airbus, starting as an intern, then advancing to R&D Machine Learning Expert (Satellite Imagery) before his current role."
-                            data-interest="Pierre's profile is a perfect example of a successful post-ENSEEIHT (N7) career in the AI/Digital Sciences field. His career shows a direct and successful trajectory from an N7 degree to a highly technical position (Computer Vision) at a major local company (Airbus). This is a trajectory I am aiming for, combining my academic specialization with concrete industrial application."
-                            data-image="assets/pierre_berjon.jpeg">
-                            <img src="assets/pierre_berjon.jpeg" alt="Pierre BERJON, Data Scientist – Computer Vision at Airbus" class="w-16 h-16 rounded-full mx-auto mb-4 border-2 border-gray-100 object-cover">
-                            <h4 class="font-display text-lg font-semibold text-gray-900 text-center">Pierre BERJON</h4>
-                            <p class="text-gray-500 mb-3 text-sm text-center">Data Scientist, Computer Vision — Airbus</p>
-                            <ul class="list-disc list-inside space-y-1 text-gray-600 text-sm">
-                                <li>ENSEEIHT (N7) Graduate</li>
-                                <li>Specialized in AI & Deep Learning</li>
-                            </ul>
-                        </button>
-
-                        <button
-                            class="role-model-card bg-white border border-gray-200 rounded-xl p-6 shadow-sm text-left w-full hover:shadow-lg transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-red-300"
-                            aria-label="View Clémence Lanfranchi's profile – AI Scientist at Mistral AI"
-                            data-title="Clémence Lanfranchi - AI Scientist"
-                            data-profile="Clémence Lanfranchi is an AI Scientist at Mistral AI. Her academic background is exceptional, featuring a 'Diplôme d'ingénieur' from École Polytechnique and a Master's degree in Data Science from ETH Zürich. Her career includes significant R&D experience at Oracle Labs and research-focused roles during her studies, such as her Master's Thesis at ETH and a research project with DS3Lab/Ebay."
-                            data-interest="Clémence's profile is a powerful model for combining a prestigious French engineering degree (Polytechnique) with high-level international specialization (ETH Zürich). Her mobility to Switzerland for her Master's degree clearly paved the way for top-tier R&D roles at Oracle and now Mistral AI. This 'French Grande École + international Master's' path is a highly effective strategy that I will strongly consider for my own."
-                            data-image="assets/clemence_lanfranchi.jpeg">
-                            <img src="assets/clemence_lanfranchi.jpeg" alt="Clémence Lanfranchi, AI Scientist at Mistral AI" class="w-16 h-16 rounded-full mx-auto mb-4 border-2 border-gray-100 object-cover">
-                            <h4 class="font-display text-lg font-semibold text-gray-900 text-center">Clémence Lanfranchi</h4>
-                            <p class="text-gray-500 mb-3 text-sm text-center">AI Scientist, Mistral AI</p>
-                            <ul class="list-disc list-inside space-y-1 text-gray-600 text-sm">
-                                <li>École Polytechnique & ETH Zürich Graduate</li>
-                                <li>Mobility: Master's in Switzerland</li>
-                            </ul>
-                        </button>
-
                     </div>
                 </div>
             </div>
@@ -655,22 +616,6 @@
             <p class="mt-1">Contact: <a href="mailto:a2lecluse@gmail.com" class="hover:text-red-600 transition-colors">a2lecluse@gmail.com</a></p>
         </div>
     </footer>
-
-    <!-- Modal -->
-    <div id="role-modal" class="fixed inset-0 z-50 flex items-center justify-center p-6 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out">
-        <div id="modal-overlay" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
-        <div id="modal-content" class="relative bg-white rounded-xl shadow-2xl max-w-2xl w-full p-5 sm:p-8 z-10 mx-auto opacity-0 scale-95 transition-all duration-300 ease-in-out">
-            <button id="modal-close-btn" aria-label="Close profile modal" class="absolute top-4 right-4 text-gray-400 hover:text-red-600 transition-colors">
-                <i data-lucide="x" class="w-6 h-6"></i>
-            </button>
-            <h3 id="modal-title" class="font-display text-2xl font-bold text-gray-900 mb-4"></h3>
-            <img id="modal-image" src="https://placehold.co/150x150/F9FAFB/DC2626?text=RM" alt="" aria-hidden="true" class="w-24 h-24 rounded-full mx-auto my-4 border-4 border-gray-100 shadow-md">
-            <h4 class="font-display text-lg font-semibold text-red-600 mt-6 mb-2">Detailed Profile</h4>
-            <p id="modal-profile" class="text-gray-700 leading-relaxed whitespace-pre-wrap text-justify"></p>
-            <h4 class="font-display text-lg font-semibold text-red-600 mt-6 mb-2">My Interest</h4>
-            <p id="modal-interest" class="text-gray-700 leading-relaxed whitespace-pre-wrap text-justify"></p>
-        </div>
-    </div>
 
     <script src="assets/main.js"></script>
 </body>

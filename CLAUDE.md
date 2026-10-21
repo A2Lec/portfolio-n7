@@ -50,13 +50,6 @@ The French version uses `index-fr.html` and has a language toggle link pointing 
 
 ## Key Components
 
-### Modal System
-Role model cards use a modal dialog system triggered by `.role-model-card` buttons. Modal data is stored in `data-*` attributes on the cards:
-- `data-title` - Modal heading
-- `data-profile` - Person's background
-- `data-interest` - Why they're inspiring
-- `data-image` - Profile photo path
-
 ### Animations
 - `.fade-in-section` - Scroll-triggered fade-in using IntersectionObserver
 - Mobile menu uses CSS grid animation (see `src/input.css`)
@@ -94,7 +87,7 @@ Both HTML files follow this structure:
 3. Mobility - Language skills and international plans
 4. Engagement - Civic activities (scouting, climate, etc.)
 5. Activities - Music and hobbies
-6. Career - CV downloads, role models, past experiences
+6. Career - CV downloads, past experiences
 7. Contact - Email, phone, LinkedIn
 
 ## Styling Conventions
