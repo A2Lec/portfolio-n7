@@ -273,7 +273,7 @@
                         <div class="p-6">
                             <h4 class="font-display text-xl font-semibold text-gray-900 mb-2">TrackMyApps</h4>
                             <p class="text-gray-600 mb-4 text-sm leading-relaxed text-justify">
-                                TrackMyApps est une application SaaS qui aide les étudiants à centraliser et suivre leurs candidatures de stage, d'alternance ou d'emploi. En plus d'un tableau Kanban, de rappels, d'une synchronisation avec le calendrier et du stockage des documents, elle propose un simulateur d'entretien par IA (Google Gemini) en mode chat ou vocal, avec transcription en direct et réponses lues à voix haute. L'application a récemment été repensée autour de son propre design system, avec réinitialisation du mot de passe, compte démo en un clic et documents légaux conformes au RGPD. Le backend repose sur Node.js, Express, TypeScript, Prisma et PostgreSQL en fonctions serverless sur Vercel, et le frontend sur React, Vite, Tailwind CSS et shadcn/ui.
+                                TrackMyApps est une application SaaS, désormais en ligne, qui aide les étudiants à centraliser et suivre leurs candidatures de stage, d'alternance ou d'emploi. En plus d'un tableau Kanban, de rappels et relances (export vers l'agenda, emails de rappel quotidiens), d'un stockage privé des documents et de statistiques, elle propose un simulateur d'entretien par IA (Google Gemini) en mode chat ou vocal, conclu par un bilan noté ; chaque utilisateur y branche sa propre clé API Gemini, stockée chiffrée. Un compte démo en un clic permet de la tester sans inscription. Le backend repose sur Node.js, Express, TypeScript, Prisma et PostgreSQL en fonctions serverless sur Vercel, et le frontend sur React, Vite, Tailwind CSS et shadcn/ui. Le code est open source (licence MIT) et chaque pull request passe par une CI GitHub Actions (lint, vérification des types et tests).
                             </p>
                             <div class="flex flex-wrap gap-2">
                                 <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Node.js</span>
@@ -286,9 +286,12 @@
                                 <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">IA Gemini</span>
                                 <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Vercel</span>
                             </div>
-                            <div class="mt-6 flex justify-center">
-                                <a href="https://track-myapps.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-gray-700 border border-gray-300 font-medium text-sm py-2.5 px-8 rounded-lg transition-colors">
+                            <div class="mt-6 flex flex-wrap justify-center gap-3">
+                                <a href="https://track-my-apps.alexisdelecluse.fr/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-gray-700 border border-gray-300 font-medium text-sm py-2.5 px-8 rounded-lg transition-colors">
                                     Visiter TrackMyApps
+                                </a>
+                                <a href="https://github.com/A2Lec/TrackMyApps" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-gray-700 border border-gray-300 font-medium text-sm py-2.5 px-8 rounded-lg transition-colors">
+                                    <i data-lucide="github" class="w-4 h-4"></i>Voir sur GitHub
                                 </a>
                             </div>
                         </div>
