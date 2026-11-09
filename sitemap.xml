@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://alexisdelecluse.fr/</loc>
+    <lastmod>2026-11-09</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://alexisdelecluse.fr/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://alexisdelecluse.fr/index-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexisdelecluse.fr/"/>
+    <image:image><image:loc>https://alexisdelecluse.fr/assets/photo-alexis.jpg</image:loc></image:image>
+    <image:image><image:loc>https://alexisdelecluse.fr/assets/projet_aeris.jpg</image:loc></image:image>
+    <image:image><image:loc>https://alexisdelecluse.fr/assets/projet_trackmyapps.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://alexisdelecluse.fr/index-fr.html</loc>
+    <lastmod>2026-11-09</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://alexisdelecluse.fr/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://alexisdelecluse.fr/index-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexisdelecluse.fr/"/>
+    <image:image><image:loc>https://alexisdelecluse.fr/assets/photo-alexis.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://alexisdelecluse.fr/assets/CV_Alexis_de_Lecluse_EN.pdf</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://alexisdelecluse.fr/assets/CV_Alexis_de_Lecluse_FR.pdf</loc>
+    <lastmod>2026-11-09</lastmod>
   </url>
 </urlset>

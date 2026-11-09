@@ -1,0 +1,26 @@
+# Alexis de Lécluse
+
+> Personal portfolio of Alexis de Lécluse, engineering student at ENSEEIHT (Toulouse INP, France), specialising in embedded AI and computer vision. Available in English and French.
+
+## Pages
+
+- [Portfolio (English)](https://alexisdelecluse.fr/): projects, skills, internships, international mobility, civic engagement, activities and contact
+- [Portfolio (French)](https://alexisdelecluse.fr/index-fr.html): French version of the same content
+
+## CV
+
+- [CV (English, PDF)](https://alexisdelecluse.fr/assets/CV_Alexis_de_Lecluse_EN.pdf)
+- [CV (French, PDF)](https://alexisdelecluse.fr/assets/CV_Alexis_de_Lecluse_FR.pdf)
+
+## Selected projects
+
+- Aeris: decision-support tool for coordinating drone deployments, 2nd place at the AGIR hackathon (2026). Source: https://github.com/Tug2co/aeris
+- Laser-guided drone defense system: ongoing computer vision study (detection and tracking) through N7 Consulting
+- TrackMyApps: SaaS to track internship and job applications, with an AI interview simulator. Live: https://track-my-apps.alexisdelecluse.fr/ Source: https://github.com/A2Lec/TrackMyApps
+- Financial prediction model: stock index forecasting with Random Forest and XGBoost
+- Solar tracker: two-axis Arduino solar tracker
+
+## Contact
+
+- LinkedIn: https://www.linkedin.com/in/alexis-de-l%C3%A9cluse-3b9436353/
+- GitHub: https://github.com/A2Lec

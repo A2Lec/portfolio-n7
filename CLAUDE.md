@@ -35,7 +35,7 @@ The CSS watcher (`watch-build.js`) monitors `src/input.css` and `tailwind.config
 - `index-fr.html` - French version of the portfolio
 - `src/input.css` - Tailwind source with custom styles (animations, mobile menu)
 - `assets/` - Compiled CSS, images, CV PDFs, and other static files
-- `tailwind.config.js` - Tailwind configuration (scans both HTML files)
+- `tailwind.config.js` - Tailwind configuration (scans both HTML files and `404.html`)
 
 ## Bilingual Architecture
 
@@ -78,6 +78,16 @@ Update CV links in both HTML files when replacing PDFs.
 3. Run `npm run build` before committing to ensure minified production CSS is current
 4. Test both language versions after making changes
 5. Verify mobile responsiveness (breakpoints: md, lg)
+
+## SEO
+
+- Each page `<head>` holds: title, meta description, robots, canonical + `hreflang` alternates, Open Graph / Twitter tags and a schema.org JSON-LD graph (`Person`, `WebSite`, `ProfilePage`). Keep both language versions in sync and update `dateModified` in the JSON-LD and `<lastmod>` in `sitemap.xml` when content changes.
+- Social share images: `assets/og-image-en.jpg` and `assets/og-image-fr.jpg` (1200×630).
+- Icons: `assets/favicon-32.png`, `assets/icon-192.png`, `assets/icon-512.png`, `assets/apple-touch-icon.png`, referenced by `site.webmanifest`.
+- Crawler files at the root: `robots.txt`, `sitemap.xml`, `llms.txt` (summary for AI assistants: update it when projects change).
+- `404.html` is served by Vercel for unknown URLs; `vercel.json` redirects `/index.html` to `/` and `/fr`, `/en` to each version.
+- Internal links to the English page use `./` (the canonical URL) rather than `index.html`.
+- Give every `<img>` explicit `width`/`height` and a descriptive `alt`; below-the-fold images use `loading="lazy" decoding="async"`.
 
 ## Content Sections
 

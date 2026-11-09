@@ -1,4 +1,7 @@
+# https://alexisdelecluse.fr/robots.txt
 User-agent: *
 Allow: /
+Disallow: /src/
+Disallow: /node_modules/
 
 Sitemap: https://alexisdelecluse.fr/sitemap.xml
